@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home Page
+    </title>
+    <link rel="icon" type="image/x-icon" href="imgs/imageee.png" class="ti">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="imgs/mus/nlogo.jpeg" alt="logo" class="logo">
+            <div class="menu">
+                <ul>
+                    <a href="index.html" class="home">Home</a> 
+                    <a href="Music.html" class="music">Music</a> 
+                </ul> 
+            </div>
+        </nav>
+        <hr>
+        <div class="options">
+            <button onclick="Dark()" class="background-button">Background</button>
+        </div>
+        <hr>
+    </header>
+    <main>
+            <div class="content">
+                <section class="links" id="links">
+                    <nav>
+                        <button onclick="some()" id="open"> <span id="rArr">&gtrdot;</span> Null</button>
+                        <ol>
+                            <span id="topics" class="topic-tab">
+                                <li>Topic</li>
+                                <li>Topic</li>
+                                <li>Topic</li>
+                                
+                            </span>
+                            
+                        </ol>
+                    </nav>
+                </section>
+                <p class="txt" style="font-size: xx-large;" id="txt">Hi I am Anonymous. I am learning coding in Javascript!</p>
+
+            </div>
+    </main>
+    <footer>
+        <p><br>
+            Copyright &copy; Home Page.
+        </p><br>
+    </footer>
+    <script>
+        var display_topic = false
+        function some(params) {
+            var btn = document.getElementById("open");
+            if (display_topic == false) {
+                document.getElementById("topics").style.display = "block";
+                
+                display_topic = true
+            } else if (display_topic == true){
+                document.getElementById("topics").style.display = "none";
+                
+                display_topic = false
+            }
+        }
+
+        var white = true  
+        var length = [0,1,2]
+        function Dark() {
+            
+            if (white == true) {
+                
+                document.body.style.backgroundColor = 'black';
+                document.getElementById('txt').style.color = "white";
+                document.getElementById('links').style.borderColor = "white";
+                for (let index = 0; index < length.length; index++) {
+                    const element = document.getElementById('links').getElementsByTagName('li').item(index);
+                    element.style.color = "white";
+                }
+
+                white = false
+
+            } else if (white == false){
+                
+                document.body.style.backgroundColor = 'white';
+                console.log('Just turned back!')
+                document.getElementById('txt').style.color = "black";
+                document.getElementById('links').style.borderColor = "black";
+                for (let index = 0; index < length.length; index++) {
+                    const element = document.getElementById('links').getElementsByTagName('li').item(index);
+                    element.style.color = "black";
+                }
+                white = true
+            }
+            
+        }
+    </script>
+</body>
+</html>
