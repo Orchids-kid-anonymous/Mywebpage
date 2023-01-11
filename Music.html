@@ -15,7 +15,7 @@
         <header>
             <nav>
                 <img src="imgs/logo.png" alt="logo" class="logo">
-                <img src="imgs/mus/Mlogo.png" alt="mlogo">
+                <img src="imgs/download.png" alt="mlogo">
                 <div class="menu">
                     <ul>
                         <a href="index.html" class="home">Home</a> 
@@ -30,160 +30,7 @@
                 <button onclick="Dark()" class="background-button">Background</button>
             </div>
             <hr>
-            <style>
-                img.music {
-    transition: .2s ease;
-    display: block;
-    backface-visibility: hidden;
-    position: relative;
-    width: 10%;
-}
-button a{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-    
-}
-.options button{
-    margin: 0 10px;
-}
-button{
-    border-radius: 50px;
-
-}
-button img{
-    border-radius: 50px;
-    margin-right: 20px;
-}
-.veg {
-    height: 168px;
-    width: 300px;
-    margin-top: 10px;
-}
-
-.music_logo {
-    width: 10%;
-}
-
-header{
-    background-image: url(imgs/bgimage.jpg);
-    border-radius: 5px;
-    position: sticky;
-    padding-bottom: 5px;
-    
-}
-nav img{
-    width: 10%;
-    margin: 10px;
-    border-radius: 20px;
-    background-origin: padding-box;
-    float: inline-start;
-}
-nav img.mlogo{
-    width: 20%;
-}        
-footer{
-    background-color: #191983;
-    text-align: center;
-    border-radius: 5px;
-    color: aliceblue;
-}
-main div button{
-    margin: 10px 10px;
-    border-color: white;
-    transition: transform .6s;
-    transition-delay: 2ms;
-}
-main div button:hover{
-    transform: scale(1.2);
-}
-.options{
-    float: inline-end;
-}
-
-img {
-   object-fit: cover; 
-}
-
-.logo {
-    width: 10%;
-    margin: 10px;
-    border-radius: 20px;
-    background-origin: padding-box;
-    
-}
-a.home,.ref,.music {
-    text-decoration: none;
-    font-family: 'Algerian';
-    color: black;
-    font-size: xx-large;
-    
-}
-
-.menu {
-    float: right;
-    text-align: center;
-}
-div.content {
-    padding: 1px 16px;
-    height: 1000px;
-    object-position: top;
-    -o-object-position: top;
-}
-a{
-    list-style: none;
-    margin-left: 20px;
-    margin-left: 20px;
-}
-body{
-    background-color: white;
-}
-
-header{
-    background-color: #df4679;
-    border-radius: 5px;
-    position: sticky;
-    margin-bottom: 20px;
-    
-}
-footer{
-    background-color: #191983;
-    text-align: center;
-    border-radius: 5px;
-    color: aliceblue;
-}
-nav ul a{
-    position: relative;
-    background-color: #df4679;
-    background-color: transparent;
-
-}
-nav ul a::after{
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: 0.6s;
-}
-nav ul a:hover::after{
-    width: 0;
-    content-visibility: auto;
-}
-.home::after{
-    content: 'Home';
-}
-.music::after{
-    content: 'Music';
-}
-.ref::after{
-    content: 'Ref';
-}
-.topic-tab{
-    display: none;
-}
-            </style>
+            
         </header>
     <main>
         
@@ -191,21 +38,21 @@ nav ul a:hover::after{
             
                 <button class="" id="vidbox">
                     <a href="https://www.youtube.com/watch?v=7uYk7yLNLi0&list=RD7uYk7yLNLi0&index=1" class="Adheera" id="Adheera">
-                        <img src="imgs/mus/Cobra.jpeg" alt="Adheera" class="veg">
+                        <img src="imgs/Cobra.jpeg" alt="Adheera" class="veg">
                         <p class="caption">Adheera - Cobra|Video song|Tamil</p><br>
                         </a>
                 </button>
             
                 <button class="" id="vidbox1">
                     <a href="https://www.youtube.com/watch?v=GDDJg9_JEQo" class="Vegeta" id="TheSearch">
-                        <img src="imgs/mus/hqdefault.jpg" alt="VEgeta" class="veg">
+                        <img src="imgs/hqdefault.jpg" alt="VEgeta" class="veg">
                         <br><p class="caption">Vegeta Tribute -The Search(NF)|Video song|English</p>
                     </a>
                 </button>
             
                 <button class="" id="vidbox2">
                     <a href="https://www.youtube.com/watch?v=I3t9agGhWyI" class="Vikrantrona" id="rakkama">
-                        <img src="imgs/mus/Rararakkama.jpeg" alt="" class="veg">
+                        <img src="imgs/Rararakkama.jpeg" alt="" class="veg">
                         <br><p class="caption">Ra Ra Rakkama -Vikrant Rona|Video song|Kannada</p>
                     </a>
                 </button>
@@ -219,44 +66,7 @@ nav ul a:hover::after{
             Copyright &copy; No content shown here belongs to me, It belongs to their rightful owners.
         </p><br>
     </footer>
-    <script>
-        var white = true
-        var button_id = ['vidbox','vidbox1','vidbox2']
-        var anchor_id = ['Adheera','TheSearch','rakkama']
-        function Dark() {
-            if (white == true) {
-                
-                document.body.style.backgroundColor = 'black';
-                
-                for (let i = 0; i < button_id.length; i++) {
-                    const element = button_id[i];
-                    const oelement = anchor_id[i];
-                    var button = document.getElementById(element);
-                    button.style.backgroundColor = 'black';
-                    document.getElementById(oelement).style.color = 'white';
-                    document.getElementById(element).style.borderColor = "black";
-                }
-
-                white = false
-
-            } else if (white == false){
-
-                document.body.style.backgroundColor = 'white';
-                console.log('Just turned back!')
-                for (let i = 0; i < button_id.length; i++) {
-                    const element = button_id[i];
-                    const oelement = anchor_id[i];
-                    var button = document.getElementById(element);
-                    button.style.backgroundColor = 'white';
-                    document.getElementById(oelement).style.color = 'black';
-                    document.getElementById(element).style.borderColor = "white";
-                }
-                white = true
-            }
-            
-        }
-        
-    </script>
+    
 </body>
 </html>
 <!-- Video tab format:
