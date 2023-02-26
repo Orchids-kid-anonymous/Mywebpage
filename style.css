@@ -20,7 +20,6 @@ img {
 }
 div.content {
     padding: 1px 16px;
-    height: 1000px;
     object-position: top;
     -o-object-position: top;
 }
