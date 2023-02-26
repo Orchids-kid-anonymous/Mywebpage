@@ -104,8 +104,22 @@ nav ul a:hover::after{
 .links:hover{
     border-radius: 15px;
     transition-duration: 0.6s;
-    }
-
+}
+#inputs{
+   display: flex;
+   border: 5px dashed black;
+   border-radius: 10px;
+   align-self: center;
+   align-content: center;
+   align-items: center;
+}
+#form{
+   display: flex;
+   flex-wrap: wrap;
+   align-self: center;
+   align-content: center;
+   align-items: center;
+}
 
 /* Music */
 
