@@ -112,6 +112,7 @@ nav ul a:hover::after{
    align-self: center;
    align-content: center;
    align-items: center;
+   flex-wrap: wrap;
 }
 #form{
    display: flex;
